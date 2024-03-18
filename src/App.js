@@ -20,7 +20,11 @@ function App() {
   }, []);
 
   return (
-    <div className="app">{Object.keys(stopsData).length && <Schedule data={stopsData} />}</div>
+    <div className="app">
+      <header className="App-header">BILDFAHRPLAN</header>
+
+      {Object.keys(stopsData).length && <Schedule data={stopsData} />}
+    </div>
   );
 }
 
